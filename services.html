@@ -1,0 +1,800 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en" style="">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Services | Dr. Wendo Skin Solutions</title>
+        <meta
+            content="Expert medical dermatology and wellness aesthetics in Meru. Rejuvenating treatments tailored for healthy, glowing skin."
+            name="description"
+        />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link
+            crossorigin=""
+            href="https://fonts.gstatic.com"
+            rel="preconnect"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+            rel="stylesheet"
+        />
+        <!-- Material Symbols -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+            rel="stylesheet"
+        />
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: 'class',
+                theme: {
+                    extend: {
+                        colors: {
+                            'on-tertiary-container': '#eeba88',
+                            'on-tertiary-fixed-variant': '#623f18',
+                            'tertiary-fixed': '#ffdcbd',
+                            'outline-variant': '#c0c9c1',
+                            'on-primary-fixed': '#002112',
+                            'on-primary': '#ffffff',
+                            background: '#fbf9f5',
+                            surface: '#fbf9f5',
+                            'on-surface-variant': '#414943',
+                            secondary: '#4c644f',
+                            'tertiary-container': '#6e4921',
+                            'surface-variant': '#e4e2de',
+                            'inverse-surface': '#30312e',
+                            'surface-bright': '#fbf9f5',
+                            'on-background': '#1b1c1a',
+                            'secondary-fixed-dim': '#b3cdb4',
+                            primary: '#14422d',
+                            'inverse-primary': '#a1d1b4',
+                            'on-secondary': '#ffffff',
+                            'inverse-on-surface': '#f2f0ed',
+                            'surface-container-high': '#eae8e4',
+                            'surface-tint': '#3a674f',
+                            'on-primary-fixed-variant': '#224f39',
+                            'on-error': '#ffffff',
+                            'surface-container-low': '#f5f3ef',
+                            'on-secondary-fixed': '#092010',
+                            'error-container': '#ffdad6',
+                            'on-tertiary': '#ffffff',
+                            'surface-dim': '#dbdad6',
+                            'on-error-container': '#93000a',
+                            'primary-fixed': '#bceecf',
+                            'on-tertiary-fixed': '#2c1600',
+                            'primary-container': '#2d5a43',
+                            'secondary-container': '#ceeacf',
+                            'on-surface': '#1b1c1a',
+                            'surface-container-highest': '#e4e2de',
+                            'primary-fixed-dim': '#a1d1b4',
+                            tertiary: '#54330c',
+                            'tertiary-fixed-dim': '#f0bd8b',
+                            'surface-container': '#efeeea',
+                            'surface-container-lowest': '#ffffff',
+                            'secondary-fixed': '#ceeacf',
+                            outline: '#717973',
+                            'on-secondary-fixed-variant': '#354c39',
+                            'on-secondary-container': '#526a55',
+                            error: '#ba1a1a',
+                            'on-primary-container': '#9fcfb2',
+                        },
+                        borderRadius: {
+                            DEFAULT: '0.125rem',
+                            lg: '0.25rem',
+                            xl: '0.5rem',
+                            full: '0.75rem',
+                        },
+                        spacing: {
+                            'margin-mobile': '20px',
+                            'container-max': '1200px',
+                            gutter: '24px',
+                            'margin-desktop': '64px',
+                            unit: '8px',
+                        },
+                        fontFamily: {
+                            'label-md': ['Plus Jakarta Sans'],
+                            caption: ['Plus Jakarta Sans'],
+                            'headline-lg': ['Libre Caslon Text'],
+                            'display-lg': ['Libre Caslon Text'],
+                            'headline-lg-mobile': ['Libre Caslon Text'],
+                            'body-md': ['Plus Jakarta Sans'],
+                            'headline-md': ['Libre Caslon Text'],
+                            'body-lg': ['Plus Jakarta Sans'],
+                        },
+                        fontSize: {
+                            'label-md': [
+                                '14px',
+                                {
+                                    lineHeight: '20px',
+                                    letterSpacing: '0.05em',
+                                    fontWeight: '600',
+                                },
+                            ],
+                            caption: [
+                                '12px',
+                                { lineHeight: '16px', fontWeight: '400' },
+                            ],
+                            'headline-lg': [
+                                '32px',
+                                { lineHeight: '40px', fontWeight: '600' },
+                            ],
+                            'display-lg': [
+                                '48px',
+                                {
+                                    lineHeight: '56px',
+                                    letterSpacing: '-0.02em',
+                                    fontWeight: '700',
+                                },
+                            ],
+                            'headline-lg-mobile': [
+                                '28px',
+                                { lineHeight: '36px', fontWeight: '600' },
+                            ],
+                            'body-md': [
+                                '16px',
+                                { lineHeight: '24px', fontWeight: '400' },
+                            ],
+                            'headline-md': [
+                                '24px',
+                                { lineHeight: '32px', fontWeight: '600' },
+                            ],
+                            'body-lg': [
+                                '18px',
+                                { lineHeight: '28px', fontWeight: '400' },
+                            ],
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            .material-symbols-outlined {
+                font-variation-settings:
+                    'FILL' 0,
+                    'wght' 400,
+                    'GRAD' 0,
+                    'opsz' 24;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .tonal-layer {
+                background-color: rgba(143, 169, 145, 0.1);
+            }
+            .treatment-image-wrapper::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(
+                    to bottom,
+                    transparent 60%,
+                    rgba(20, 66, 45, 0.05)
+                );
+            }
+            .glass-nav {
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+            }
+        </style>
+    </head>
+    <body
+        class="bg-background text-on-background font-body-md text-body-md overflow-x-hidden"
+    >
+        <!-- TopNavBar -->
+        <header
+            class="docked full-width top-0 sticky z-50 bg-surface/90 backdrop-blur-md shadow-sm"
+        >
+            <div
+                class="relative flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto"
+            >
+                <a href="index.html" class="flex items-center">
+                    <img
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIH-2lkH-R1fA-zLA309sHo1FMbfwvCmVrNgZYHVJ0-EN1LD_3K1BLRHFKGcvVUAaJkfIQJPs8rNyY6k-nfB3ww0deinKdQH3KiNOf4mt1DKl8bkt_xIKxXwjSq9QzLTwijAUVvoL87JUSJ59Vjbv8t53XOepIVf2BZvKrjN2qKzil6oiWoL4wnR4HafzQqAIGkMlihN6qbH7ZNAKsCWG5pBctalMsUUAfQYjqX5e4smJcyuCSAohgU9lI6eiVp5a5DEd8emiZ8So"
+                        alt="Dr. Wendo Skin Solutions Logo"
+                        class="h-12 w-auto object-contain"
+                    />
+                </a>
+                <div class="hidden md:flex gap-8 items-center">
+                    <a
+                        class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                        href="services.html"
+                        >Treatments</a
+                    >
+                    <a
+                        class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                        href="services.html"
+                        >Skincare</a
+                    >
+                    <a
+                        class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                        href="about.html"
+                        >About Dr. Wendo</a
+                    >
+                    <a
+                        class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                        href="index.html#testimonials"
+                        >Testimonials</a
+                    >
+                    <a
+                        class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                        href="contact.html"
+                        >Contact</a
+                    >
+                    <a
+                        href="book.html"
+                        class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-md text-label-md hover:opacity-90 transition-opacity active:scale-95 duration-150 inline-block"
+                        >Book Appointment</a
+                    >
+                </div>
+                <div class="flex md:hidden items-center">
+                    <button
+                        id="mobile-menu-toggle"
+                        aria-expanded="false"
+                        class="text-primary"
+                    >
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+                <div
+                    id="mobile-menu"
+                    class="absolute inset-x-0 top-full mt-2 hidden rounded-3xl bg-surface/95 backdrop-blur-xl border border-surface-variant/60 shadow-xl p-5 z-50 md:hidden"
+                >
+                    <nav class="flex flex-col gap-3">
+                        <a
+                            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                            href="services.html"
+                            >Treatments</a
+                        >
+                        <a
+                            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                            href="services.html"
+                            >Skincare</a
+                        >
+                        <a
+                            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                            href="about.html"
+                            >About Dr. Wendo</a
+                        >
+                        <a
+                            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                            href="index.html#testimonials"
+                            >Testimonials</a
+                        >
+                        <a
+                            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                            href="contact.html"
+                            >Contact</a
+                        >
+                        <a
+                            href="book.html"
+                            class="block bg-primary text-on-primary px-6 py-3 rounded-lg text-center font-label-md hover:opacity-90 transition-all active:scale-95 duration-150"
+                            >Book Appointment</a
+                        >
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="w-full">
+            <!-- Hero Section -->
+            <section
+                class="relative py-20 px-margin-mobile md:px-margin-desktop overflow-hidden"
+            >
+                <div
+                    class="max-w-container-max mx-auto relative z-10 transition-all duration-700 opacity-100 translate-y-0"
+                >
+                    <div class="max-w-2xl">
+                        <h1
+                            class="font-display-lg text-display-lg text-primary mb-6"
+                        >
+                            Expert Care for
+                            <span class="italic">Every Skin Story.</span>
+                        </h1>
+                        <p
+                            class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg"
+                        >
+                            From complex dermatological conditions to
+                            rejuvenating wellness rituals, our Meru-based clinic
+                            combines medical science with a serene, caring
+                            touch.
+                        </p>
+                    </div>
+                </div>
+                <!-- Atmospheric background element -->
+                <div
+                    class="absolute -top-24 -right-24 w-96 h-96 bg-secondary/10 rounded-full blur-[100px] transition-all duration-700 opacity-100 translate-y-0"
+                ></div>
+            </section>
+            <!-- Services Grid - Categorized Sections -->
+            <section
+                class="py-16 md:py-32 px-margin-mobile md:px-margin-desktop"
+            >
+                <div
+                    class="max-w-container-max mx-auto space-y-32 transition-all duration-700 opacity-100 translate-y-0"
+                >
+                    <!-- Category 1: Medical Dermatology -->
+                    <div
+                        class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start"
+                    >
+                        <div class="lg:col-span-5 order-2 lg:order-1">
+                            <div class="flex items-center gap-3 mb-4">
+                                <span
+                                    class="material-symbols-outlined text-primary"
+                                    style="font-variation-settings: 'FILL' 1"
+                                    >medical_services</span
+                                >
+                                <span
+                                    class="font-label-md text-label-md text-secondary uppercase tracking-widest"
+                                    >Scientific Excellence</span
+                                >
+                            </div>
+                            <h2
+                                class="font-headline-lg text-headline-lg text-primary mb-8"
+                            >
+                                Medical Dermatology
+                            </h2>
+                            <p
+                                class="font-body-md text-body-md text-on-surface-variant mb-12"
+                            >
+                                Advanced clinical treatments designed to address
+                                skin pathologies at the root. Our approach
+                                prioritizes health and long-term vitality.
+                            </p>
+                            <div class="space-y-6">
+                                <!-- Service Item -->
+                                <div
+                                    class="group border-b border-surface-variant pb-6 hover:translate-x-1 transition-transform duration-300"
+                                >
+                                    <div
+                                        class="flex justify-between items-start mb-2"
+                                    >
+                                        <h3
+                                            class="font-headline-md text-headline-md text-on-surface"
+                                        >
+                                            Hormonal Acne
+                                        </h3>
+                                        <span
+                                            class="font-label-md text-label-md text-primary bg-primary-fixed/30 px-3 py-1 rounded-full"
+                                            >from KES 4,500</span
+                                        >
+                                    </div>
+                                    <p
+                                        class="font-body-md text-body-md text-on-surface-variant"
+                                    >
+                                        Targeted clinical therapy for persistent
+                                        adult and teenage acne using
+                                        FDA-approved protocols.
+                                    </p>
+                                </div>
+                                <!-- Service Item -->
+                                <div
+                                    class="group border-b border-surface-variant pb-6 hover:translate-x-1 transition-transform duration-300"
+                                >
+                                    <div
+                                        class="flex justify-between items-start mb-2"
+                                    >
+                                        <h3
+                                            class="font-headline-md text-headline-md text-on-surface"
+                                        >
+                                            Aging Skin
+                                        </h3>
+                                        <span
+                                            class="font-label-md text-label-md text-primary bg-primary-fixed/30 px-3 py-1 rounded-full"
+                                            >from KES 6,000</span
+                                        >
+                                    </div>
+                                    <p
+                                        class="font-body-md text-body-md text-on-surface-variant"
+                                    >
+                                        Medical-grade rejuvenation treatments
+                                        focusing on collagen synthesis and
+                                        structural integrity.
+                                    </p>
+                                </div>
+                                <!-- Service Item -->
+                                <div
+                                    class="group border-b border-surface-variant pb-6 hover:translate-x-1 transition-transform duration-300"
+                                >
+                                    <div
+                                        class="flex justify-between items-start mb-2"
+                                    >
+                                        <h3
+                                            class="font-headline-md text-headline-md text-on-surface"
+                                        >
+                                            Hyperpigmentation
+                                        </h3>
+                                        <span
+                                            class="font-label-md text-label-md text-primary bg-primary-fixed/30 px-3 py-1 rounded-full"
+                                            >from KES 5,500</span
+                                        >
+                                    </div>
+                                    <p
+                                        class="font-body-md text-body-md text-on-surface-variant"
+                                    >
+                                        Specialized pigment correction for
+                                        melasma, sun spots, and
+                                        post-inflammatory marks.
+                                    </p>
+                                </div>
+                                <!-- Service Item -->
+                                <div
+                                    class="group border-b border-surface-variant pb-6 hover:translate-x-1 transition-transform duration-300"
+                                >
+                                    <div
+                                        class="flex justify-between items-start mb-2"
+                                    >
+                                        <h3
+                                            class="font-headline-md text-headline-md text-on-surface"
+                                        >
+                                            Hair &amp; Nail Treatments
+                                        </h3>
+                                        <span
+                                            class="font-label-md text-label-md text-primary bg-primary-fixed/30 px-3 py-1 rounded-full"
+                                            >from KES 3,800</span
+                                        >
+                                    </div>
+                                    <p
+                                        class="font-body-md text-body-md text-on-surface-variant"
+                                    >
+                                        Diagnostics and clinical management for
+                                        alopecia, scalp conditions, and nail
+                                        health.
+                                    </p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-12 bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:shadow-lg transition-all flex items-center gap-3"
+                            >
+                                Book Medical Consultation
+                                <span
+                                    class="material-symbols-outlined text-[18px]"
+                                    >arrow_forward</span
+                                >
+                            </button>
+                        </div>
+                        <div class="lg:col-span-7 order-1 lg:order-2">
+                            <div
+                                class="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-xl"
+                            >
+                                <img
+                                    alt="Clinical Consultation"
+                                    class="w-full h-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa0Qj6u7JFVrWjH2lGzz7LsQI10K4HD7WUV_e6yw9zlE7wMV_rdgdL0aDKew8otsNIgzN91RgwJnqbJJA8vdrhgslcYw8TJA7o-OmCxGy2uEcRAIV3J4GBSBbZHJREm-Zw-YK9g5fK90tdsKMlPRcUfPaensc7fnKmZ2aVIzoul_zQiheA19TOqY1AaLfZO0BdiEKneaW_mhifGx5oIF7QVQITS2Ko5i7pbVtGp93ur7XZHVCeXeD-YZ8k9C7nReMXgYo5S8SbX20"
+                                />
+                                <div
+                                    class="absolute inset-0 border-[24px] border-background/20 pointer-events-none"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Category 2: Wellness & Aesthetics -->
+                    <div
+                        class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start"
+                    >
+                        <div class="lg:col-span-7">
+                            <div
+                                class="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-xl"
+                            >
+                                <img
+                                    alt="Wellness Spa Treatment"
+                                    class="w-full h-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuArVYD4DPuX43CvwpOSUICKgvGegpI8gkE6kHbcJ1aPMIHW1_rV4PaXsC6_UVoqmIBJ1S77ZDQRD7UhJ11W4nxYFfDSlweMRFBzs5Kklf5toqAWLE_3SKU1Vt-G0tB5pD_ezDzLTnVRmdLQ_KxPqNfJItVM5b9ZG_nmb1QeaSOXKPJc74_VkQFpOo-mMP9EwSC1vXRLiyZbSGLx6OTr0Ax0CrxQ_xDUa-CM2DrswFMPl4O46NHfewFl49x-0xjyUZbSDb7k9jODjdk"
+                                />
+                                <div
+                                    class="absolute inset-0 bg-secondary/5 mix-blend-overlay"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5">
+                            <div class="flex items-center gap-3 mb-4">
+                                <span
+                                    class="material-symbols-outlined text-primary"
+                                    style="font-variation-settings: 'FILL' 1"
+                                    >spa</span
+                                >
+                                <span
+                                    class="font-label-md text-label-md text-secondary uppercase tracking-widest"
+                                    >Nurture &amp; Restore</span
+                                >
+                            </div>
+                            <h2
+                                class="font-headline-lg text-headline-lg text-primary mb-8"
+                            >
+                                Wellness &amp; Aesthetics
+                            </h2>
+                            <p
+                                class="font-body-md text-body-md text-on-surface-variant mb-12"
+                            >
+                                Immersive sensory experiences that combine
+                                botanical therapy with professional expertise to
+                                glow from within.
+                            </p>
+                            <div class="space-y-6">
+                                <!-- Service Item -->
+                                <div
+                                    class="group border-b border-surface-variant pb-6 hover:translate-x-1 transition-transform duration-300"
+                                >
+                                    <div
+                                        class="flex justify-between items-start mb-2"
+                                    >
+                                        <h3
+                                            class="font-headline-md text-headline-md text-on-surface"
+                                        >
+                                            Premium Massage
+                                        </h3>
+                                        <span
+                                            class="font-label-md text-label-md text-primary bg-primary-fixed/30 px-3 py-1 rounded-full"
+                                            >from KES 4,000</span
+                                        >
+                                    </div>
+                                    <p
+                                        class="font-body-md text-body-md text-on-surface-variant"
+                                    >
+                                        Therapeutic lymphatic drainage and
+                                        tension relief designed for clinical
+                                        stress reduction.
+                                    </p>
+                                </div>
+                                <!-- Service Item -->
+                                <div
+                                    class="group border-b border-surface-variant pb-6 hover:translate-x-1 transition-transform duration-300"
+                                >
+                                    <div
+                                        class="flex justify-between items-start mb-2"
+                                    >
+                                        <h3
+                                            class="font-headline-md text-headline-md text-on-surface"
+                                        >
+                                            Customized Facials
+                                        </h3>
+                                        <span
+                                            class="font-label-md text-label-md text-primary bg-primary-fixed/30 px-3 py-1 rounded-full"
+                                            >from KES 5,000</span
+                                        >
+                                    </div>
+                                    <p
+                                        class="font-body-md text-body-md text-on-surface-variant"
+                                    >
+                                        Multi-step nutrient infusions tailored
+                                        to your skin’s immediate hydration and
+                                        detox needs.
+                                    </p>
+                                </div>
+                                <!-- Service Item -->
+                                <div
+                                    class="group border-b border-surface-variant pb-6 hover:translate-x-1 transition-transform duration-300"
+                                >
+                                    <div
+                                        class="flex justify-between items-start mb-2"
+                                    >
+                                        <h3
+                                            class="font-headline-md text-headline-md text-on-surface"
+                                        >
+                                            Skin Routine Setup
+                                        </h3>
+                                        <span
+                                            class="font-label-md text-label-md text-primary bg-primary-fixed/30 px-3 py-1 rounded-full"
+                                            >from KES 2,500</span
+                                        >
+                                    </div>
+                                    <p
+                                        class="font-body-md text-body-md text-on-surface-variant"
+                                    >
+                                        A personalized 3-month skin roadmap
+                                        including product layering and
+                                        environmental advice.
+                                    </p>
+                                </div>
+                                <!-- Service Item -->
+                                <div
+                                    class="group border-b border-surface-variant pb-6 hover:translate-x-1 transition-transform duration-300"
+                                >
+                                    <div
+                                        class="flex justify-between items-start mb-2"
+                                    >
+                                        <h3
+                                            class="font-headline-md text-headline-md text-on-surface"
+                                        >
+                                            Product Advice
+                                        </h3>
+                                        <span
+                                            class="font-label-md text-label-md text-primary bg-primary-fixed/30 px-3 py-1 rounded-full"
+                                            >Complimentary*</span
+                                        >
+                                    </div>
+                                    <p
+                                        class="font-body-md text-body-md text-on-surface-variant"
+                                    >
+                                        Expert matching of skin concerns with
+                                        our range of high-performance botanical
+                                        formulations.
+                                    </p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-12 bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:shadow-lg transition-all flex items-center gap-3"
+                            >
+                                Book Wellness Ritual
+                                <span
+                                    class="material-symbols-outlined text-[18px]"
+                                    >arrow_forward</span
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- CTA Section -->
+            <section class="py-24 tonal-layer">
+                <div
+                    class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center transition-all duration-700 opacity-100 translate-y-0"
+                >
+                    <h3
+                        class="font-headline-lg text-headline-lg text-primary mb-6"
+                    >
+                        Not sure which path to take?
+                    </h3>
+                    <p
+                        class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto"
+                    >
+                        Start with a comprehensive skin analysis. Our experts
+                        will help you identify the perfect balance between
+                        medical care and wellness support.
+                    </p>
+                    <div class="flex flex-col md:flex-row justify-center gap-4">
+                        <button
+                            class="bg-primary text-on-primary px-10 py-4 rounded-lg font-label-md text-label-md hover:scale-105 transition-transform"
+                        >
+                            Schedule Initial Analysis
+                        </button>
+                        <button
+                            class="border-2 border-primary text-primary px-10 py-4 rounded-lg font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all"
+                        >
+                            Inquire via Whatsapp
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer
+            class="full-width bottom-0 bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container px-margin-desktop py-16 w-full max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-gutter"
+        >
+            <div class="space-y-6">
+                <div class="mb-6">
+                    <img
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIH-2lkH-R1fA-zLA309sHo1FMbfwvCmVrNgZYHVJ0-EN1LD_3K1BLRHFKGcvVUAaJkfIQJPs8rNyY6k-nfB3ww0deinKdQH3KiNOf4mt1DKl8bkt_xIKxXwjSq9QzLTwijAUVvoL87JUSJ59Vjbv8t53XOepIVf2BZvKrjN2qKzil6oiWoL4wnR4HafzQqAIGkMlihN6qbH7ZNAKsCWG5pBctalMsUUAfQYjqX5e4smJcyuCSAohgU9lI6eiVp5a5DEd8emiZ8So"
+                        alt="Dr. Wendo Skin Solutions Logo"
+                        class="h-10 w-auto object-contain brightness-0 invert"
+                    />
+                </div>
+                <p
+                    class="font-body-md text-body-md text-on-primary/80 leading-relaxed"
+                >
+                    © 2024 Dr. Wendo Skin Solutions. Medical Wellness &amp;
+                    Dermatology Excellence in Meru.
+                </p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4
+                    class="font-label-md text-label-md uppercase tracking-wider mb-2"
+                >
+                    Clinic Links
+                </h4>
+                <a
+                    class="font-label-md text-label-md text-on-primary/80 hover:text-on-primary transition-all hover:translate-x-1 duration-200"
+                    href="#"
+                    >Clinic Locations: Meru &amp; Makutano</a
+                >
+                <a
+                    class="font-label-md text-label-md text-on-primary/80 hover:text-on-primary transition-all hover:translate-x-1 duration-200"
+                    href="#"
+                    >Treatment Guidelines</a
+                >
+                <a
+                    class="font-label-md text-label-md text-on-primary/80 hover:text-on-primary transition-all hover:translate-x-1 duration-200"
+                    href="#"
+                    >Privacy Policy</a
+                >
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4
+                    class="font-label-md text-label-md uppercase tracking-wider mb-2"
+                >
+                    Connect With Us
+                </h4>
+                <a
+                    class="font-label-md text-label-md text-on-primary/80 hover:text-on-primary transition-all hover:translate-x-1 duration-200 flex items-center gap-2"
+                    href="#"
+                >
+                    <span class="material-symbols-outlined text-[18px]"
+                        >camera</span
+                    >
+                    Instagram Support
+                </a>
+                <a
+                    class="font-label-md text-label-md text-on-primary/80 hover:text-on-primary transition-all hover:translate-x-1 duration-200 flex items-center gap-2"
+                    href="#"
+                >
+                    <span class="material-symbols-outlined text-[18px]"
+                        >chat_bubble</span
+                    >
+                    Whatsapp Inquiry
+                </a>
+                <div class="mt-4 pt-4 border-t border-on-primary/20">
+                    <p class="font-caption text-caption opacity-60 italic">
+                        Providing science-backed beauty for Meru.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script>
+            // Smooth reveal on scroll interaction
+            const observerOptions = {
+                threshold: 0.1,
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(
+                            'opacity-100',
+                            'translate-y-0'
+                        );
+                        entry.target.classList.remove(
+                            'opacity-0',
+                            'translate-y-10'
+                        );
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section > div').forEach((el) => {
+                el.classList.add(
+                    'transition-all',
+                    'duration-700',
+                    'opacity-0',
+                    'translate-y-10'
+                );
+                observer.observe(el);
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var mobileToggle =
+                    document.getElementById('mobile-menu-toggle');
+                var mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileToggle || !mobileMenu) return;
+                mobileToggle.addEventListener('click', function (event) {
+                    event.stopPropagation();
+                    var isHidden = mobileMenu.classList.contains('hidden');
+                    mobileMenu.classList.toggle('hidden');
+                    mobileToggle.setAttribute(
+                        'aria-expanded',
+                        isHidden ? 'true' : 'false'
+                    );
+                });
+                mobileMenu.querySelectorAll('a').forEach(function (link) {
+                    link.addEventListener('click', function () {
+                        mobileMenu.classList.add('hidden');
+                        mobileToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+                document.addEventListener('click', function (event) {
+                    if (
+                        !mobileMenu.contains(event.target) &&
+                        !mobileToggle.contains(event.target)
+                    ) {
+                        mobileMenu.classList.add('hidden');
+                        mobileToggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

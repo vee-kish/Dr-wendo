@@ -1,0 +1,766 @@
+<!doctype html>
+
+<html class="scroll-smooth" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Contact Us | Dr. Wendo Skin Solutions</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+            rel="stylesheet"
+        />
+        <!-- Shared Tailwind Config -->
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: 'class',
+                theme: {
+                    extend: {
+                        colors: {
+                            'on-tertiary-container': '#eeba88',
+                            'on-tertiary-fixed-variant': '#623f18',
+                            'tertiary-fixed': '#ffdcbd',
+                            'outline-variant': '#c0c9c1',
+                            'on-primary-fixed': '#002112',
+                            'on-primary': '#ffffff',
+                            background: '#fbf9f5',
+                            surface: '#fbf9f5',
+                            'on-surface-variant': '#414943',
+                            secondary: '#4c644f',
+                            'tertiary-container': '#6e4921',
+                            'surface-variant': '#e4e2de',
+                            'inverse-surface': '#30312e',
+                            'surface-bright': '#fbf9f5',
+                            'on-background': '#1b1c1a',
+                            'secondary-fixed-dim': '#b3cdb4',
+                            primary: '#14422d',
+                            'inverse-primary': '#a1d1b4',
+                            'on-secondary': '#ffffff',
+                            'inverse-on-surface': '#f2f0ed',
+                            'surface-container-high': '#eae8e4',
+                            'surface-tint': '#3a674f',
+                            'on-primary-fixed-variant': '#224f39',
+                            'on-error': '#ffffff',
+                            'surface-container-low': '#f5f3ef',
+                            'on-secondary-fixed': '#092010',
+                            'error-container': '#ffdad6',
+                            'on-tertiary': '#ffffff',
+                            'surface-dim': '#dbdad6',
+                            'on-error-container': '#93000a',
+                            'primary-fixed': '#bceecf',
+                            'on-tertiary-fixed': '#2c1600',
+                            'primary-container': '#2d5a43',
+                            'secondary-container': '#ceeacf',
+                            'on-surface': '#1b1c1a',
+                            'surface-container-highest': '#e4e2de',
+                            'primary-fixed-dim': '#a1d1b4',
+                            tertiary: '#54330c',
+                            'tertiary-fixed-dim': '#f0bd8b',
+                            'surface-container': '#efeeea',
+                            'surface-container-lowest': '#ffffff',
+                            'secondary-fixed': '#ceeacf',
+                            outline: '#717973',
+                            'on-secondary-fixed-variant': '#354c39',
+                            'on-secondary-container': '#526a55',
+                            error: '#ba1a1a',
+                            'on-primary-container': '#9fcfb2',
+                        },
+                        borderRadius: {
+                            DEFAULT: '0.125rem',
+                            lg: '0.25rem',
+                            xl: '0.5rem',
+                            full: '0.75rem',
+                        },
+                        spacing: {
+                            'margin-mobile': '20px',
+                            'container-max': '1200px',
+                            gutter: '24px',
+                            'margin-desktop': '64px',
+                            unit: '8px',
+                        },
+                        fontFamily: {
+                            'label-md': ['Plus Jakarta Sans'],
+                            caption: ['Plus Jakarta Sans'],
+                            'headline-lg': ['Libre Caslon Text'],
+                            'display-lg': ['Libre Caslon Text'],
+                            'headline-lg-mobile': ['Libre Caslon Text'],
+                            'body-md': ['Plus Jakarta Sans'],
+                            'headline-md': ['Libre Caslon Text'],
+                            'body-lg': ['Plus Jakarta Sans'],
+                        },
+                        fontSize: {
+                            'label-md': [
+                                '14px',
+                                {
+                                    lineHeight: '20px',
+                                    letterSpacing: '0.05em',
+                                    fontWeight: '600',
+                                },
+                            ],
+                            caption: [
+                                '12px',
+                                { lineHeight: '16px', fontWeight: '400' },
+                            ],
+                            'headline-lg': [
+                                '32px',
+                                { lineHeight: '40px', fontWeight: '600' },
+                            ],
+                            'display-lg': [
+                                '48px',
+                                {
+                                    lineHeight: '56px',
+                                    letterSpacing: '-0.02em',
+                                    fontWeight: '700',
+                                },
+                            ],
+                            'headline-lg-mobile': [
+                                '28px',
+                                { lineHeight: '36px', fontWeight: '600' },
+                            ],
+                            'body-md': [
+                                '16px',
+                                { lineHeight: '24px', fontWeight: '400' },
+                            ],
+                            'headline-md': [
+                                '24px',
+                                { lineHeight: '32px', fontWeight: '600' },
+                            ],
+                            'body-lg': [
+                                '18px',
+                                { lineHeight: '28px', fontWeight: '400' },
+                            ],
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            .material-symbols-outlined {
+                font-variation-settings:
+                    'FILL' 0,
+                    'wght' 400,
+                    'GRAD' 0,
+                    'opsz' 24;
+            }
+            .tonal-layer {
+                background-color: rgba(143, 169, 145, 0.1);
+            }
+            .glass-nav {
+                backdrop-filter: blur(20px);
+            }
+            .card-shadow {
+                box-shadow: 0 10px 30px -10px rgba(20, 66, 45, 0.04);
+            }
+        </style>
+    </head>
+    <body
+        class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed"
+    >
+        <!-- TopNavBar -->
+        <header
+            class="docked full-width top-0 sticky z-50 bg-surface/90 glass-nav shadow-sm"
+        >
+            <div
+                class="relative flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto"
+            >
+                <a
+                    href="index.html"
+                    class="font-headline-md text-headline-md text-primary tracking-tight"
+                    >Dr. Wendo Skin Solutions</a
+                >
+                <div class="hidden md:flex gap-8 items-center">
+                    <a
+                        class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                        href="services.html"
+                        >Treatments</a
+                    >
+                    <a
+                        class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                        href="services.html"
+                        >Skincare</a
+                    >
+                    <a
+                        class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                        href="about.html"
+                        >About Dr. Wendo</a
+                    >
+                    <a
+                        class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                        href="index.html#testimonials"
+                        >Testimonials</a
+                    >
+                    <a
+                        class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                        href="contact.html"
+                        >Contact</a
+                    >
+                    <a
+                        href="book.html"
+                        class="bg-primary text-on-primary px-6 py-2 rounded font-label-md text-label-md hover:opacity-90 active:scale-95 duration-150 transition-all"
+                        >Book Appointment</a
+                    >
+                </div>
+                <div class="flex md:hidden items-center">
+                    <button
+                        id="mobile-menu-toggle"
+                        aria-expanded="false"
+                        class="text-primary"
+                    >
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+                <div
+                    id="mobile-menu"
+                    class="absolute inset-x-0 top-full mt-2 hidden rounded-3xl bg-surface/95 backdrop-blur-xl border border-surface-variant/60 shadow-xl p-5 z-50 md:hidden"
+                >
+                    <nav class="flex flex-col gap-3">
+                        <a
+                            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                            href="services.html"
+                            >Treatments</a
+                        >
+                        <a
+                            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                            href="services.html"
+                            >Skincare</a
+                        >
+                        <a
+                            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                            href="about.html"
+                            >About Dr. Wendo</a
+                        >
+                        <a
+                            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                            href="index.html#testimonials"
+                            >Testimonials</a
+                        >
+                        <a
+                            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                            href="contact.html"
+                            >Contact</a
+                        >
+                        <a
+                            href="book.html"
+                            class="block bg-primary text-on-primary px-6 py-3 rounded-lg text-center font-label-md hover:opacity-90 transition-all active:scale-95 duration-150"
+                            >Book Appointment</a
+                        >
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- Hero Section -->
+            <section
+                class="relative h-[40vh] min-h-[300px] flex items-center overflow-hidden"
+            >
+                <div class="absolute inset-0 z-0">
+                    <div
+                        class="absolute inset-0 bg-primary/40 mix-blend-multiply z-10"
+                    ></div>
+                    <img
+                        alt="Dr. Wendo Skin Solutions Reception"
+                        class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuChA1vPTtwBCZOLAnUW_EkruWhT9RMWjjm8zcsQ6bSJ2URvO-LNZP-XP_jS0YooMF7GrT70tWwkkYgT3UWLDWK9Kr6FNXPDuqdJad3K-vgVZ3hki-6P00q4bBMO1BY3mBkCERNiQdn4wXlAwYrSJVXUaVFmsA5GJBLwlsgFE8sw98l1xnkANNeLrrOGl36sgE13hYT-EUFM7Tu9eflZWlDO9TUGwVkCfTEwBxbXso973fZaYEdCqFeQuaYT0gmpNa8rJBOm38yOcys"
+                    />
+                </div>
+                <div
+                    class="relative z-20 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
+                >
+                    <div class="max-w-2xl text-on-primary">
+                        <h1 class="font-display-lg text-display-lg mb-4">
+                            Connect with Excellence
+                        </h1>
+                        <p class="font-body-lg text-body-lg opacity-90">
+                            Experience premium dermatology care in Meru. Reach
+                            out to schedule your transformation.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Locations & Form Section -->
+            <section
+                class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
+            >
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                    <!-- Left Column: Location Cards & Details -->
+                    <div class="lg:col-span-7 space-y-12">
+                        <div class="space-y-4">
+                            <h2
+                                class="font-headline-lg text-headline-lg text-primary"
+                            >
+                                Our Clinics
+                            </h2>
+                            <p
+                                class="font-body-md text-body-md text-on-surface-variant"
+                            >
+                                Specialized medical dermatology and aesthetic
+                                treatments in serene settings.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- Meru Clinic Card -->
+                            <div
+                                class="bg-surface border border-surface-variant/50 rounded-xl overflow-hidden card-shadow group hover:-translate-y-1 transition-transform duration-300"
+                            >
+                                <div
+                                    class="h-48 bg-surface-container overflow-hidden"
+                                >
+                                    <div
+                                        class="w-full h-full bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500"
+                                        data-location="Meru, Kenya"
+                                        style="
+                                            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCVzrMQ-o8_E0z5dSlDl0X44tCKu4qmsdMZtU24LuKV8KfcgZf3vjaOqpUi8otPNiyTtWP-JnHYvN0FoNaVzWcvVpAFHTIWX11BjdJRpJXKzm_anHwFiZ-VxbovOdgDbq8E9kzQFMGPox_PU96qNsfF_GEbdQCPZicnM3WhLyIFWtMneWAVWRyCv38CaLmfc-U0mQi1NZzArQDVQCM-_ubCCwGsS6VrEuoNJpXnw3qf6S6fZ_FuB5QkBxpIbkQyYXa3Y1g97gDYRc0');
+                                        "
+                                    ></div>
+                                </div>
+                                <div class="p-8 space-y-4">
+                                    <h3
+                                        class="font-headline-md text-headline-md text-primary"
+                                    >
+                                        Meru Clinic
+                                    </h3>
+                                    <div
+                                        class="space-y-3 font-body-md text-body-md text-on-surface-variant"
+                                    >
+                                        <div class="flex gap-3">
+                                            <span
+                                                class="material-symbols-outlined text-primary"
+                                                >location_on</span
+                                            >
+                                            <span
+                                                >Meru Town, Professional Plaza,
+                                                3rd Floor</span
+                                            >
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <span
+                                                class="material-symbols-outlined text-primary"
+                                                >call</span
+                                            >
+                                            <span>+254 700 000 000</span>
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <span
+                                                class="material-symbols-outlined text-primary"
+                                                >chat</span
+                                            >
+                                            <a
+                                                class="text-secondary font-semibold hover:underline"
+                                                href="#"
+                                                >WhatsApp Support</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Makutano Clinic Card -->
+                            <div
+                                class="bg-surface border border-surface-variant/50 rounded-xl overflow-hidden card-shadow group hover:-translate-y-1 transition-transform duration-300"
+                            >
+                                <div
+                                    class="h-48 bg-surface-container overflow-hidden"
+                                >
+                                    <div
+                                        class="w-full h-full bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500"
+                                        data-location="Makutano, Meru, Kenya"
+                                        style="
+                                            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCVzrMQ-o8_E0z5dSlDl0X44tCKu4qmsdMZtU24LuKV8KfcgZf3vjaOqpUi8otPNiyTtWP-JnHYvN0FoNaVzWcvVpAFHTIWX11BjdJRpJXKzm_anHwFiZ-VxbovOdgDbq8E9kzQFMGPox_PU96qNsfF_GEbdQCPZicnM3WhLyIFWtMneWAVWRyCv38CaLmfc-U0mQi1NZzArQDVQCM-_ubCCwGsS6VrEuoNJpXnw3qf6S6fZ_FuB5QkBxpIbkQyYXa3Y1g97gDYRc0');
+                                        "
+                                    ></div>
+                                </div>
+                                <div class="p-8 space-y-4">
+                                    <h3
+                                        class="font-headline-md text-headline-md text-primary"
+                                    >
+                                        Makutano Clinic
+                                    </h3>
+                                    <div
+                                        class="space-y-3 font-body-md text-body-md text-on-surface-variant"
+                                    >
+                                        <div class="flex gap-3">
+                                            <span
+                                                class="material-symbols-outlined text-primary"
+                                                >location_on</span
+                                            >
+                                            <span
+                                                >Makutano Square, Medical Wing
+                                                A</span
+                                            >
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <span
+                                                class="material-symbols-outlined text-primary"
+                                                >call</span
+                                            >
+                                            <span>+254 711 111 111</span>
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <span
+                                                class="material-symbols-outlined text-primary"
+                                                >chat</span
+                                            >
+                                            <a
+                                                class="text-secondary font-semibold hover:underline"
+                                                href="#"
+                                                >WhatsApp Inquiry</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Clinic Hours Section -->
+                        <div class="tonal-layer p-8 md:p-12 rounded-xl">
+                            <div
+                                class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6"
+                            >
+                                <div>
+                                    <h4
+                                        class="font-headline-md text-headline-md text-primary mb-2"
+                                    >
+                                        Practice Hours
+                                    </h4>
+                                    <p
+                                        class="font-body-md text-body-md text-on-surface-variant"
+                                    >
+                                        Convenient scheduling for your skin
+                                        health.
+                                    </p>
+                                </div>
+                                <div class="space-y-2 text-right">
+                                    <p
+                                        class="font-label-md text-label-md text-primary"
+                                    >
+                                        Mon - Fri: 8:00 AM - 6:00 PM
+                                    </p>
+                                    <p
+                                        class="font-label-md text-label-md text-primary"
+                                    >
+                                        Saturday: 9:00 AM - 2:00 PM
+                                    </p>
+                                    <p
+                                        class="font-label-md text-label-md text-on-surface-variant opacity-60"
+                                    >
+                                        Sunday: Closed
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Column: Contact Form -->
+                    <div class="lg:col-span-5">
+                        <div
+                            class="sticky top-24 bg-surface p-8 md:p-12 rounded-xl border border-surface-variant card-shadow"
+                        >
+                            <h3
+                                class="font-headline-md text-headline-md text-primary mb-2"
+                            >
+                                Send an Inquiry
+                            </h3>
+                            <p
+                                class="font-body-md text-body-md text-on-surface-variant mb-8"
+                            >
+                                Fill out the form below and our care team will
+                                get back to you shortly.
+                            </p>
+                            <form class="space-y-6">
+                                <div class="space-y-2">
+                                    <label
+                                        class="font-label-md text-label-md text-on-surface-variant"
+                                        >Full Name</label
+                                    >
+                                    <input
+                                        class="w-full bg-transparent border-0 border-b border-surface-variant focus:border-primary focus:ring-0 px-0 py-2 transition-colors"
+                                        placeholder="Jane Doe"
+                                        type="text"
+                                    />
+                                </div>
+                                <div class="space-y-2">
+                                    <label
+                                        class="font-label-md text-label-md text-on-surface-variant"
+                                        >Email Address</label
+                                    >
+                                    <input
+                                        class="w-full bg-transparent border-0 border-b border-surface-variant focus:border-primary focus:ring-0 px-0 py-2 transition-colors"
+                                        placeholder="jane@example.com"
+                                        type="email"
+                                    />
+                                </div>
+                                <div class="space-y-2">
+                                    <label
+                                        class="font-label-md text-label-md text-on-surface-variant"
+                                        >Preferred Location</label
+                                    >
+                                    <select
+                                        class="w-full bg-transparent border-0 border-b border-surface-variant focus:border-primary focus:ring-0 px-0 py-2 transition-colors"
+                                    >
+                                        <option>Meru Clinic</option>
+                                        <option>Makutano Clinic</option>
+                                    </select>
+                                </div>
+                                <div class="space-y-2">
+                                    <label
+                                        class="font-label-md text-label-md text-on-surface-variant"
+                                        >Your Message</label
+                                    >
+                                    <textarea
+                                        class="w-full bg-transparent border-0 border-b border-surface-variant focus:border-primary focus:ring-0 px-0 py-2 transition-colors"
+                                        placeholder="How can we help you?"
+                                        rows="4"
+                                    ></textarea>
+                                </div>
+                                <button
+                                    class="w-full bg-primary text-on-primary py-4 font-label-md text-label-md hover:opacity-90 transition-opacity active:scale-[0.98] duration-150"
+                                >
+                                    Send Inquiry
+                                </button>
+                            </form>
+                            <div
+                                class="mt-12 pt-12 border-t border-surface-variant flex items-center justify-between"
+                            >
+                                <span
+                                    class="font-label-md text-label-md text-on-surface-variant"
+                                    >Follow Our Journey</span
+                                >
+                                <div class="flex gap-4">
+                                    <a
+                                        class="text-primary hover:scale-110 transition-transform"
+                                        href="#"
+                                    >
+                                        <svg
+                                            class="w-6 h-6 fill-current"
+                                            viewbox="0 0 24 24"
+                                        >
+                                            <path
+                                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                    <a
+                                        class="text-primary hover:scale-110 transition-transform"
+                                        href="#"
+                                    >
+                                        <svg
+                                            class="w-6 h-6 fill-current"
+                                            viewbox="0 0 24 24"
+                                        >
+                                            <path
+                                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Aesthetic Divider -->
+            <section class="py-24 tonal-layer">
+                <div
+                    class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center space-y-6"
+                >
+                    <span
+                        class="material-symbols-outlined text-4xl text-primary opacity-40"
+                        >spa</span
+                    >
+                    <h2
+                        class="font-headline-lg text-headline-lg text-primary max-w-3xl mx-auto"
+                    >
+                        "True beauty begins with healthy skin. Let us guide you
+                        on your wellness journey."
+                    </h2>
+                    <p
+                        class="font-label-md text-label-md text-secondary tracking-widest uppercase"
+                    >
+                        — Dr. Wendo
+                    </p>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="full-width bottom-0 bg-primary text-on-primary">
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-16 w-full max-w-container-max mx-auto"
+            >
+                <div class="space-y-6">
+                    <div class="font-headline-md text-on-primary">
+                        Dr. Wendo Skin Solutions
+                    </div>
+                    <p
+                        class="font-body-md text-body-md opacity-80 leading-relaxed"
+                    >
+                        Expert dermatological care focused on medical precision
+                        and wellness serenity in the heart of Meru.
+                    </p>
+                </div>
+                <div class="space-y-6">
+                    <h4
+                        class="font-label-md text-label-md uppercase tracking-wider text-on-primary/60"
+                    >
+                        Quick Links
+                    </h4>
+                    <ul class="space-y-4 font-body-md text-body-md">
+                        <li>
+                            <a
+                                class="text-on-primary/80 hover:text-on-primary hover:underline transition-all block translate-x-0 hover:translate-x-1 duration-200"
+                                href="#"
+                                >Clinic Locations: Meru &amp; Makutano</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="text-on-primary/80 hover:text-on-primary hover:underline transition-all block translate-x-0 hover:translate-x-1 duration-200"
+                                href="#"
+                                >Treatment Guidelines</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="text-on-primary/80 hover:text-on-primary hover:underline transition-all block translate-x-0 hover:translate-x-1 duration-200"
+                                href="#"
+                                >Privacy Policy</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-6">
+                    <h4
+                        class="font-label-md text-label-md uppercase tracking-wider text-on-primary/60"
+                    >
+                        Connect
+                    </h4>
+                    <ul class="space-y-4 font-body-md text-body-md">
+                        <li>
+                            <a
+                                class="text-on-primary/80 hover:text-on-primary hover:underline transition-all block translate-x-0 hover:translate-x-1 duration-200"
+                                href="#"
+                                >Instagram Support</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="text-on-primary/80 hover:text-on-primary hover:underline transition-all block translate-x-0 hover:translate-x-1 duration-200"
+                                href="#"
+                                >Whatsapp Inquiry</a
+                            >
+                        </li>
+                    </ul>
+                    <div
+                        class="pt-4 flex items-center gap-2 text-on-primary/60"
+                    >
+                        <span class="material-symbols-outlined">verified</span>
+                        <span class="text-label-md font-label-md"
+                            >KMPDC Licensed Practice</span
+                        >
+                    </div>
+                </div>
+            </div>
+            <div
+                class="border-t border-on-primary/10 py-8 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
+            >
+                <p
+                    class="font-label-md text-label-md text-on-primary/60 text-center md:text-left"
+                >
+                    © 2024 Dr. Wendo Skin Solutions. Medical Wellness &amp;
+                    Dermatology Excellence in Meru.
+                </p>
+            </div>
+        </footer>
+        <script>
+            // Simple form interaction
+            document
+                .querySelector('form')
+                .addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    const btn = this.querySelector('button');
+                    const originalText = btn.innerText;
+                    btn.innerText = 'Sending...';
+                    btn.disabled = true;
+
+                    setTimeout(() => {
+                        btn.innerText = 'Message Sent Successfully';
+                        btn.classList.replace('bg-primary', 'bg-secondary');
+                        this.reset();
+                        setTimeout(() => {
+                            btn.innerText = originalText;
+                            btn.classList.replace('bg-secondary', 'bg-primary');
+                            btn.disabled = false;
+                        }, 3000);
+                    }, 1500);
+                });
+
+            // Intersection Observer for fade-in animations
+            const observerOptions = {
+                threshold: 0.1,
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(
+                            'opacity-100',
+                            'translate-y-0'
+                        );
+                        entry.target.classList.remove(
+                            'opacity-0',
+                            'translate-y-8'
+                        );
+                    }
+                });
+            }, observerOptions);
+
+            document
+                .querySelectorAll('.card-shadow, .tonal-layer')
+                .forEach((el) => {
+                    el.classList.add(
+                        'transition-all',
+                        'duration-700',
+                        'opacity-0',
+                        'translate-y-8'
+                    );
+                    observer.observe(el);
+                });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var mobileToggle =
+                    document.getElementById('mobile-menu-toggle');
+                var mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileToggle || !mobileMenu) return;
+                mobileToggle.addEventListener('click', function (event) {
+                    event.stopPropagation();
+                    var isHidden = mobileMenu.classList.contains('hidden');
+                    mobileMenu.classList.toggle('hidden');
+                    mobileToggle.setAttribute(
+                        'aria-expanded',
+                        isHidden ? 'true' : 'false'
+                    );
+                });
+                mobileMenu.querySelectorAll('a').forEach(function (link) {
+                    link.addEventListener('click', function () {
+                        mobileMenu.classList.add('hidden');
+                        mobileToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+                document.addEventListener('click', function (event) {
+                    if (
+                        !mobileMenu.contains(event.target) &&
+                        !mobileToggle.contains(event.target)
+                    ) {
+                        mobileMenu.classList.add('hidden');
+                        mobileToggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
