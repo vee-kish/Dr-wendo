@@ -13,10 +13,6 @@
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
             rel="stylesheet"
         />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-            rel="stylesheet"
-        />
         <script id="tailwind-config">
             tailwind.config = {
                 darkMode: 'class',
@@ -283,6 +279,7 @@
                         class="flex items-center gap-4 mb-16 overflow-x-auto pb-4 no-scrollbar"
                     >
                         <div
+                            id="progress-step-1"
                             class="flex items-center gap-3 whitespace-nowrap border-b-2 border-primary pb-2 pr-6"
                         >
                             <span
@@ -295,6 +292,7 @@
                             >
                         </div>
                         <div
+                            id="progress-step-2"
                             class="flex items-center gap-3 whitespace-nowrap border-b-2 border-outline-variant pb-2 px-6"
                         >
                             <span
@@ -307,6 +305,7 @@
                             >
                         </div>
                         <div
+                            id="progress-step-3"
                             class="flex items-center gap-3 whitespace-nowrap border-b-2 border-outline-variant pb-2 px-6"
                         >
                             <span
@@ -319,6 +318,7 @@
                             >
                         </div>
                         <div
+                            id="progress-step-4"
                             class="flex items-center gap-3 whitespace-nowrap border-b-2 border-outline-variant pb-2 px-6"
                         >
                             <span
@@ -347,6 +347,43 @@
                                 class="grid grid-cols-1 gap-gutter max-w-2xl mx-auto"
                             >
                                 <!-- Meru Clinic -->
+                                <button
+                                    class="group text-left p-6 bg-surface-container-lowest border border-outline-variant rounded-xl hover:border-primary hover:shadow-lg transition-all duration-300"
+                                    onclick="selectLocation('Meru')"
+                                >
+                                    <div
+                                        class="w-full aspect-video rounded-lg overflow-hidden mb-6"
+                                    >
+                                        <img
+                                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                            data-alt="A modern dermatology clinic in Meru town center, featuring clean white interiors with warm accent lighting. The space includes private consultation rooms and a welcoming reception area with botanical elements."
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaay-1T0XrfMmONJnVaSeZMe9xNjykg0ibYc8IIBoXD4xQvPE1Pzi94ffx5v6eJTQOTKzhrGrio3IHVGEVZdNOjbC8HFtwu6DREynpMdfwaSqdapFcWzqHHJrvSyDx8ohvHpYu59lZPEd3aTUgThLI4f6rtNaHCEfDa1e34zh0W4LWoE-1pt8rAXkz3h73Py91iMnIts1g5CGhfQBHCN3ikkcOnmJpQBIMKmnsIWoHLQK5hdZl7il_pgwnkO5GlW4oh5MthtxO2cM"
+                                        />
+                                    </div>
+                                    <h3
+                                        class="font-headline-md text-headline-md text-primary mb-2"
+                                    >
+                                        Meru Town Center
+                                    </h3>
+                                    <p
+                                        class="font-body-md text-body-md text-on-surface-variant mb-4"
+                                    >
+                                        Main clinic with comprehensive dermatology
+                                        services and advanced treatment facilities.
+                                    </p>
+                                    <div
+                                        class="flex items-center gap-2 text-primary font-label-md"
+                                    >
+                                        <span
+                                            class="material-symbols-outlined"
+                                            data-icon="location_on"
+                                            >location_on</span
+                                        >
+                                        <span class=""
+                                            >Select this location</span
+                                        >
+                                    </div>
+                                </button>
 
                                 <!-- Makutano Clinic -->
                                 <button
@@ -411,6 +448,9 @@
                                     <div class="space-y-2">
                                         <button
                                             class="w-full p-4 flex justify-between items-center bg-white border border-outline-variant rounded hover:border-primary transition-colors text-left group"
+                                            data-service="General Consultation"
+                                            data-price="KES 3,000"
+                                            data-duration="30 Minutes"
                                         >
                                             <div>
                                                 <p
@@ -432,6 +472,9 @@
                                         </button>
                                         <button
                                             class="w-full p-4 flex justify-between items-center bg-white border border-outline-variant rounded hover:border-primary transition-colors text-left group"
+                                            data-service="Acne Treatment Plan"
+                                            data-price="KES 4,500"
+                                            data-duration="45 Minutes"
                                         >
                                             <div>
                                                 <p
@@ -463,6 +506,9 @@
                                     <div class="space-y-2">
                                         <button
                                             class="w-full p-4 flex justify-between items-center bg-white border border-outline-variant rounded hover:border-primary transition-colors text-left group"
+                                            data-service="Chemical Peel"
+                                            data-price="KES 8,000"
+                                            data-duration="60 Minutes"
                                         >
                                             <div>
                                                 <p
@@ -484,6 +530,9 @@
                                         </button>
                                         <button
                                             class="w-full p-4 flex justify-between items-center bg-white border border-outline-variant rounded hover:border-primary transition-colors text-left group"
+                                            data-service="HydraFacial Therapy"
+                                            data-price="KES 12,000"
+                                            data-duration="90 Minutes"
                                         >
                                             <div>
                                                 <p
@@ -528,7 +577,7 @@
                                         <p
                                             class="font-label-md text-label-md text-primary"
                                         >
-                                            October 2024
+                                            June 2026
                                         </p>
                                         <div class="flex gap-2">
                                             <button
@@ -591,56 +640,37 @@
                                         </div>
                                     </div>
                                     <div class="grid grid-cols-7 gap-2">
-                                        <!-- Simplified Calendar Grid -->
-                                        <button
-                                            class="p-3 text-on-surface-variant/30 text-body-md"
-                                            disabled=""
-                                        >
-                                            28
-                                        </button>
-                                        <button
-                                            class="p-3 text-on-surface-variant/30 text-body-md"
-                                            disabled=""
-                                        >
-                                            29
-                                        </button>
-                                        <button
-                                            class="p-3 text-on-surface-variant/30 text-body-md"
-                                            disabled=""
-                                        >
-                                            30
-                                        </button>
-                                        <button
-                                            class="p-3 hover:bg-primary-fixed rounded-lg text-body-md"
-                                        >
-                                            1
-                                        </button>
-                                        <button
-                                            class="p-3 hover:bg-primary-fixed rounded-lg text-body-md"
-                                        >
-                                            2
-                                        </button>
-                                        <button
-                                            class="p-3 hover:bg-primary-fixed rounded-lg text-body-md"
-                                        >
-                                            3
-                                        </button>
-                                        <button
-                                            class="p-3 hover:bg-primary-fixed rounded-lg text-body-md"
-                                        >
-                                            4
-                                        </button>
-                                        <button
-                                            class="p-3 bg-primary text-on-primary rounded-lg text-body-md shadow-md"
-                                        >
-                                            5
-                                        </button>
-                                        <button
-                                            class="p-3 hover:bg-primary-fixed rounded-lg text-body-md"
-                                        >
-                                            6
-                                        </button>
-                                        <!-- ... rest of the days ... -->
+                                        <button class="p-3 text-on-surface-variant/30 text-body-md" disabled></button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">1</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">2</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">3</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">4</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">5</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">6</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">7</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">8</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">9</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">10</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">11</button>
+                                        <button class="p-3 bg-primary text-on-primary rounded-lg text-body-md shadow-md calendar-day">12</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">13</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">14</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">15</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">16</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">17</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">18</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">19</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">20</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">21</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">22</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">23</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">24</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">25</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">26</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">27</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">28</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">29</button>
+                                        <button class="p-3 hover:bg-primary-fixed rounded-lg text-body-md calendar-day">30</button>
                                     </div>
                                 </div>
                                 <!-- Time Slots -->
@@ -648,31 +678,36 @@
                                     <p
                                         class="font-label-md text-label-md text-on-surface mb-6"
                                     >
-                                        Available Slots for Oct 5
+                                        Available Slots for June 12
                                     </p>
                                     <div class="grid grid-cols-2 gap-3">
                                         <button
-                                            class="py-3 px-4 border border-outline-variant rounded hover:border-primary hover:bg-primary-container/10 transition-all font-label-md text-label-md"
+                                            class="py-3 px-4 border border-outline-variant rounded hover:border-primary hover:bg-primary-container/10 transition-all font-label-md text-label-md time-slot"
+                                            data-time="09:00 AM"
                                         >
                                             09:00 AM
                                         </button>
                                         <button
-                                            class="py-3 px-4 border border-outline-variant rounded hover:border-primary hover:bg-primary-container/10 transition-all font-label-md text-label-md"
+                                            class="py-3 px-4 border border-outline-variant rounded hover:border-primary hover:bg-primary-container/10 transition-all font-label-md text-label-md time-slot"
+                                            data-time="10:30 AM"
                                         >
                                             10:30 AM
                                         </button>
                                         <button
-                                            class="py-3 px-4 border border-outline-variant rounded hover:border-primary hover:bg-primary-container/10 transition-all font-label-md text-label-md"
+                                            class="py-3 px-4 border border-outline-variant rounded hover:border-primary hover:bg-primary-container/10 transition-all font-label-md text-label-md time-slot"
+                                            data-time="11:00 AM"
                                         >
                                             11:00 AM
                                         </button>
                                         <button
-                                            class="py-3 px-4 border border-outline-variant rounded hover:border-primary hover:bg-primary-container/10 transition-all font-label-md text-label-md"
+                                            class="py-3 px-4 border border-outline-variant rounded hover:border-primary hover:bg-primary-container/10 transition-all font-label-md text-label-md time-slot"
+                                            data-time="02:30 PM"
                                         >
                                             02:30 PM
                                         </button>
                                         <button
-                                            class="py-3 px-4 border border-outline-variant rounded hover:border-primary hover:bg-primary-container/10 transition-all font-label-md text-label-md"
+                                            class="py-3 px-4 border border-outline-variant rounded hover:border-primary hover:bg-primary-container/10 transition-all font-label-md text-label-md time-slot"
+                                            data-time="04:00 PM"
                                         >
                                             04:00 PM
                                         </button>
@@ -690,7 +725,7 @@
                             >
                                 Patient Information
                             </h2>
-                            <form class="space-y-6">
+                            <form class="space-y-6" id="patient-form">
                                 <div
                                     class="grid grid-cols-1 md:grid-cols-2 gap-6"
                                 >
@@ -703,6 +738,8 @@
                                             class="w-full border-0 border-b border-outline-variant bg-transparent focus:ring-0 focus:border-primary transition-colors py-2"
                                             placeholder="John Doe"
                                             type="text"
+                                            id="patient-name"
+                                            required
                                         />
                                     </div>
                                     <div class="space-y-1">
@@ -714,6 +751,8 @@
                                             class="w-full border-0 border-b border-outline-variant bg-transparent focus:ring-0 focus:border-primary transition-colors py-2"
                                             placeholder="john@example.com"
                                             type="email"
+                                            id="patient-email"
+                                            required
                                         />
                                     </div>
                                     <div class="space-y-1">
@@ -725,6 +764,9 @@
                                             class="w-full border-0 border-b border-outline-variant bg-transparent focus:ring-0 focus:border-primary transition-colors py-2"
                                             placeholder="+254 700 000 000"
                                             type="tel"
+                                            id="patient-phone"
+                                            required
+                                            pattern="[+0-9\s\-\(\)]{10,}"
                                         />
                                     </div>
                                     <div class="space-y-1">
@@ -734,6 +776,7 @@
                                         >
                                         <select
                                             class="w-full border-0 border-b border-outline-variant bg-transparent focus:ring-0 focus:border-primary transition-colors py-2"
+                                            id="patient-language"
                                         >
                                             <option>English</option>
                                             <option>Swahili</option>
@@ -750,6 +793,7 @@
                                         class="w-full border-0 border-b border-outline-variant bg-transparent focus:ring-0 focus:border-primary transition-colors py-2"
                                         placeholder="Please briefly describe what you'd like to discuss..."
                                         rows="3"
+                                        id="patient-notes"
                                     ></textarea>
                                 </div>
                             </form>
@@ -861,13 +905,21 @@
                                     </p>
                                 </div>
                             </div>
-                            <button
-                                class="w-full mt-8 bg-primary text-on-primary py-4 rounded-xl font-label-md text-label-md hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-                                disabled=""
-                                id="main-action-btn"
-                            >
-                                Continue to Service Selection
-                            </button>
+                            <div class="flex gap-3 mt-8">
+                                <button
+                                    class="flex-1 bg-surface-container border border-outline-variant text-on-surface py-4 rounded-xl font-label-md text-label-md hover:border-primary transition-all disabled:opacity-50 disabled:cursor-not-allowed hidden"
+                                    id="back-btn"
+                                >
+                                    Back
+                                </button>
+                                <button
+                                    class="flex-[2] bg-primary text-on-primary py-4 rounded-xl font-label-md text-label-md hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                                    disabled=""
+                                    id="main-action-btn"
+                                >
+                                    Continue to Service Selection
+                                </button>
+                            </div>
                         </div>
                         <!-- Trust Indicators -->
                         <div class="bg-primary-container p-6 rounded-2xl">
@@ -910,8 +962,13 @@
                     <p
                         class="font-body-md text-body-md text-on-primary/80 dark:text-on-primary-container/80"
                     >
-                        © 2024 Dr. Wendo Skin Solutions. Medical Wellness &amp;
+                        © 2026 Dr. Wendo Skin Solutions. Medical Wellness &amp;
                         Dermatology Excellence in Meru.
+                    </p>
+                    <p
+                        class="font-body-md text-body-md text-on-primary/80 dark:text-on-primary-container/80"
+                    >
+                        Developed by <a href="https://www.veunecour.com" target="_blank" class="text-primary dark:text-primary-container hover:underline"> Vanessa</a>
                     </p>
                 </div>
                 <div class="space-y-4">
@@ -961,7 +1018,7 @@
                         <li class="">
                             <a
                                 class="font-label-md text-label-md text-on-primary/80 dark:text-on-primary-container/80 hover:text-on-primary hover:underline transition-all block translate-x-0 hover:translate-x-1 duration-200"
-                                href="#"
+                                href="https://wa.me/254700000000"
                                 >Whatsapp Inquiry</a
                             >
                         </li>
@@ -971,6 +1028,7 @@
         </footer>
         <script>
             let currentStep = 1;
+            let selectedDate = 12;
             const state = {
                 location: '',
                 service: '',
@@ -978,6 +1036,37 @@
                 date: '',
                 time: '',
             };
+
+            function updateProgressTracker(step) {
+                for (let i = 1; i <= 4; i++) {
+                    const progressEl = document.getElementById(`progress-step-${i}`);
+                    const circle = progressEl.querySelector('span:first-child');
+                    const label = progressEl.querySelector('span:last-child');
+                    
+                    if (i === step) {
+                        progressEl.classList.remove('border-outline-variant');
+                        progressEl.classList.add('border-primary');
+                        circle.classList.remove('bg-surface-container-high', 'text-on-surface-variant/60');
+                        circle.classList.add('bg-primary', 'text-on-primary');
+                        label.classList.remove('text-on-surface-variant/60');
+                        label.classList.add('text-primary');
+                    } else if (i < step) {
+                        progressEl.classList.remove('border-outline-variant');
+                        progressEl.classList.add('border-primary');
+                        circle.classList.remove('bg-surface-container-high', 'text-on-surface-variant/60');
+                        circle.classList.add('bg-primary', 'text-on-primary');
+                        label.classList.remove('text-on-surface-variant/60');
+                        label.classList.add('text-primary');
+                    } else {
+                        progressEl.classList.remove('border-primary');
+                        progressEl.classList.add('border-outline-variant');
+                        circle.classList.remove('bg-primary', 'text-on-primary');
+                        circle.classList.add('bg-surface-container-high', 'text-on-surface-variant/60');
+                        label.classList.remove('text-primary');
+                        label.classList.add('text-on-surface-variant/60');
+                    }
+                }
+            }
 
             function selectLocation(loc) {
                 state.location = loc + ' Clinic';
@@ -990,14 +1079,12 @@
                     .getElementById('summary-location')
                     .classList.add('font-medium', 'text-primary');
 
-                // Enable next step
                 document.getElementById('main-action-btn').disabled = false;
                 document.getElementById('main-action-btn').onclick = () =>
                     showStep(2);
             }
 
             function showStep(step) {
-                // Hide all steps
                 const sections = ['step-1', 'step-2', 'step-3', 'step-4'];
                 sections.forEach((s) => {
                     const el = document.getElementById(s);
@@ -1005,111 +1092,99 @@
                     el.classList.remove('opacity-100', 'translate-y-0');
                 });
 
-                // Show current step
                 const currentEl = document.getElementById(`step-${step}`);
                 currentEl.classList.remove('hidden');
                 setTimeout(() => {
                     currentEl.classList.add('opacity-100', 'translate-y-0');
                 }, 50);
 
-                // Update Progress UI (Conceptual)
                 currentStep = step;
+                updateProgressTracker(step);
 
-                // Update button label
                 const btn = document.getElementById('main-action-btn');
-                if (step === 2) btn.innerText = 'Continue to Schedule';
-                if (step === 3) btn.innerText = 'Continue to Personal Details';
-                if (step === 4) btn.innerText = 'Confirm Appointment';
+                const backBtn = document.getElementById('back-btn');
 
-                // Specific Step 2 logic (Mocking service selection)
+                if (step === 1) {
+                    btn.innerText = 'Continue to Service Selection';
+                    btn.disabled = !state.location;
+                    backBtn.classList.add('hidden');
+                } else if (step === 2) {
+                    btn.innerText = 'Continue to Schedule';
+                    btn.disabled = !state.service;
+                    backBtn.classList.remove('hidden');
+                    backBtn.onclick = () => showStep(1);
+                } else if (step === 3) {
+                    btn.innerText = 'Continue to Personal Details';
+                    btn.disabled = !state.time;
+                    backBtn.onclick = () => showStep(2);
+                } else if (step === 4) {
+                    btn.innerText = 'Confirm Appointment';
+                    btn.disabled = false;
+                    backBtn.onclick = () => showStep(3);
+                }
+
                 if (step === 2) {
-                    const serviceBtns =
-                        document.querySelectorAll('#step-2 button');
+                    const serviceBtns = document.querySelectorAll('#step-2 button[data-service]');
                     serviceBtns.forEach((sb) => {
                         sb.onclick = () => {
-                            const name =
-                                sb.querySelector('p:first-child').innerText;
-                            const priceStr = sb
-                                .querySelector('p:last-child')
-                                .innerText.split('• ')[1];
-                            state.service = name;
-                            state.price = priceStr;
-                            document.getElementById(
-                                'summary-service'
-                            ).innerText = name;
-                            document
-                                .getElementById('summary-service')
-                                .classList.remove('italic');
-                            document.getElementById('summary-price').innerText =
-                                priceStr;
+                            serviceBtns.forEach(b => b.classList.remove('border-primary', 'bg-primary-container/10'));
+                            sb.classList.add('border-primary', 'bg-primary-container/10');
+                            state.service = sb.dataset.service;
+                            state.price = sb.dataset.price;
+                            document.getElementById('summary-service').innerText = state.service;
+                            document.getElementById('summary-service').classList.remove('italic');
+                            document.getElementById('summary-price').innerText = state.price;
+                            btn.disabled = false;
                             btn.onclick = () => showStep(3);
                         };
                     });
                 }
 
-                // Specific Step 3 logic (Mocking time selection)
                 if (step === 3) {
-                    const timeBtns = document.querySelectorAll(
-                        '#step-3 button.py-3'
-                    );
+                    const calendarDays = document.querySelectorAll('.calendar-day');
+                    calendarDays.forEach((day) => {
+                        day.onclick = () => {
+                            calendarDays.forEach(d => {
+                                d.classList.remove('bg-primary', 'text-on-primary', 'shadow-md');
+                                d.classList.add('hover:bg-primary-fixed');
+                            });
+                            day.classList.remove('hover:bg-primary-fixed');
+                            day.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
+                            selectedDate = day.innerText;
+                            document.querySelector('#step-3 p.font-label-md').innerText = `Available Slots for June ${selectedDate}`;
+                        };
+                    });
+
+                    const timeBtns = document.querySelectorAll('.time-slot');
                     timeBtns.forEach((tb) => {
                         tb.onclick = () => {
-                            state.date = 'Oct 5, 2024';
-                            state.time = tb.innerText;
-                            document.getElementById(
-                                'summary-datetime'
-                            ).innerText = `${state.date} at ${state.time}`;
-                            document
-                                .getElementById('summary-datetime')
-                                .classList.remove('italic');
+                            timeBtns.forEach(t => t.classList.remove('border-primary', 'bg-primary-container/10'));
+                            tb.classList.add('border-primary', 'bg-primary-container/10');
+                            state.date = `June ${selectedDate}, 2026`;
+                            state.time = tb.dataset.time;
+                            document.getElementById('summary-datetime').innerText = `${state.date} at ${state.time}`;
+                            document.getElementById('summary-datetime').classList.remove('italic');
+                            btn.disabled = false;
                             btn.onclick = () => showStep(4);
                         };
                     });
                 }
 
                 if (step === 4) {
-                    btn.onclick = () =>
-                        alert(
-                            'Booking confirmed! Dr. Wendo looks forward to seeing you.'
-                        );
+                    btn.onclick = () => {
+                        const form = document.getElementById('patient-form');
+                        if (form.checkValidity()) {
+                            alert(`Booking confirmed!\n\nLocation: ${state.location}\nService: ${state.service}\nPrice: ${state.price}\nDate: ${state.date}\nTime: ${state.time}\n\nDr. Wendo looks forward to seeing you.`);
+                        } else {
+                            form.reportValidity();
+                        }
+                    };
                 }
 
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         </script>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var mobileToggle =
-                    document.getElementById('mobile-menu-toggle');
-                var mobileMenu = document.getElementById('mobile-menu');
-                if (!mobileToggle || !mobileMenu) return;
-                mobileToggle.addEventListener('click', function (event) {
-                    event.stopPropagation();
-                    var isHidden = mobileMenu.classList.contains('hidden');
-                    mobileMenu.classList.toggle('hidden');
-                    mobileToggle.setAttribute(
-                        'aria-expanded',
-                        isHidden ? 'true' : 'false'
-                    );
-                });
-                mobileMenu.querySelectorAll('a').forEach(function (link) {
-                    link.addEventListener('click', function () {
-                        mobileMenu.classList.add('hidden');
-                        mobileToggle.setAttribute('aria-expanded', 'false');
-                    });
-                });
-                document.addEventListener('click', function (event) {
-                    if (
-                        !mobileMenu.contains(event.target) &&
-                        !mobileToggle.contains(event.target)
-                    ) {
-                        mobileMenu.classList.add('hidden');
-                        mobileToggle.setAttribute('aria-expanded', 'false');
-                    }
-                });
-            });
-        </script>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 var mobileToggle =
